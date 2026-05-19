@@ -5,6 +5,14 @@
     "packageManager": "npm"
   },
   "newProjectRoot": "projects",
+  "schematics": {
+    "@schematics/angular:component": {
+      "type": "component"
+    },
+    "@schematics/angular:service": {
+      "type": "service"
+    }
+  },
   "projects": {
     "trucking-dashboard": {
       "projectType": "application",

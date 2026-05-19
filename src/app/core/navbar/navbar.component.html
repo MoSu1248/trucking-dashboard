@@ -1,0 +1,52 @@
+<aside class="sidebar h-full">
+  <div class="sidebar__logo"><img src="" alt="" /></div>
+  <nav class="p-4 flex flex-col items-center">
+    <ul class="flex flex-col gap-10 justify-center items-center px-5 py-5 rounded-4xl bg-[#f3F4FD]">
+      <li class="rounded-full">
+        <a
+          class="w-10 h-10 flex items-center justify-center rounded-full"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >H</a
+        >
+      </li>
+      <li class="rounded-full">
+        <a
+          class="w-10 h-10 flex items-center justify-center rounded-full"
+          routerLink="/users"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >U</a
+        >
+      </li>
+      <li class="rounded-full">
+        <a
+          class="w-10 h-10 flex items-center justify-center rounded-full"
+          routerLink="/edit"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >E</a
+        >
+      </li>
+      <li class="rounded-full">
+        <a
+          class="w-10 h-10 flex items-center justify-center rounded-full"
+          routerLink="/view"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >V</a
+        >
+      </li>
+      <li class="rounded-full">
+        <a
+          class="w-10 h-10 flex items-center justify-center rounded-full"
+          routerLink="/login"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >L</a
+        >
+      </li>
+    </ul>
+  </nav>
+</aside>
