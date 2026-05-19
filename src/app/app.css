@@ -1,0 +1,23 @@
+.dashboard-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 60px 1fr;
+  background-color: #ffffff81;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar content';
+}
+
+.dashboard-layout__sidebar {
+  grid-area: sidebar;
+}
+
+.dashboard-layout__header {
+  grid-area: header;
+}
+
+.dashboard-layout__content {
+  grid-area: content;
+  overflow-y: auto;
+}
