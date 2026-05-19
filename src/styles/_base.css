@@ -1,0 +1,6 @@
+@layer base {
+  html,
+  body {
+    @apply antialiased  overflow-x-hidden font-main transition-all ease-out;
+  }
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* ===== FONTS ===== */
+
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+
+  /* ===== PALETTE ===== */
+
+  --accent: #e8724a;
+  --accent-hover: #d4603a;
+
+  --glass-blur: blur(12px);
+  --shadow-card-light: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-card-dark: 0 4px 24px rgba(0, 0, 0, 0.4);
+
+  --bg-primary: #f5efe8;
+  --bg-sidebar: #ffffff;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-border: rgba(0, 0, 0, 0.08);
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --shadow-card: var(--shadow-card-light);
+
+  /* ===== LAYOUT ===== */
+
+  --radius-card: 16px;
+  --radius-btn: 8px;
+  --sidebar-expanded: 240px;
+  --sidebar-collapsed: 72px;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #0f0f0f;
+  --bg-sidebar: #161616;
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --text-primary: #f5f5f5;
+  --text-secondary: #a0a0a0;
+  --shadow-card: var(--shadow-card-dark);
+}
