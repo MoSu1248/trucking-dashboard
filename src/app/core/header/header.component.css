@@ -1,0 +1,18 @@
+.header li {
+  cursor: pointer;
+}
+
+.header li:not(:last-child) {
+  padding: 0.5rem;
+  border-radius: var(--radius-btn);
+  border: 1px solid transparent;
+}
+
+.header li:hover:not(:last-child),
+.header li:focus-visible:not(:last-child) {
+  background-color: rgba(177, 177, 177, 0.281);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-card);
+  -webkit-backdrop-filter: blur(12px);
+}
