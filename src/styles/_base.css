@@ -1,6 +1,10 @@
 @layer base {
   html,
   body {
-    @apply antialiased  overflow-x-hidden font-main transition-all ease-out;
+    @apply font-main transition-all ease-out overflow-hidden;
+
+    background:
+      radial-gradient(ellipse at center left, rgba(125, 60, 190, 0.14) 0%, transparent 60%),
+      radial-gradient(ellipse at top right, #3d1f08 0%, #0f0f0f 60%), #0f0f0f;
   }
 }

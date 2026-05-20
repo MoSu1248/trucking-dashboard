@@ -1,12 +1,12 @@
 .dashboard-layout {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 150px 1fr;
+  height: calc(100vh - 3rem);
+  grid-template-columns: 90px 1fr;
   grid-template-rows: 60px 1fr;
-  background-color: #ffffff81;
   grid-template-areas:
     'sidebar header'
     'sidebar content';
+    gap: 1rem;
 }
 
 .dashboard-layout__sidebar {
@@ -20,4 +20,15 @@
 .dashboard-layout__content {
   grid-area: content;
   overflow-y: auto;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* dark mode */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  padding: 1rem 2rem 1rem 1rem;
 }

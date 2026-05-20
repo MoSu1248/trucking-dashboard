@@ -7,15 +7,19 @@ import { EditDataComponent } from './app/features/edit-data/edit-data.component'
 import { UsersComponent } from './app/features/users/users.component';
 import { ViewDataComponent } from './app/features/view-data/view-data.component';
 import { provideHttpClient } from '@angular/common/http';
+import { InboxComponent } from './app/features/inbox/inbox.component';
+import { NursesComponent } from './app/features/nurses/nurses.component';
 
 bootstrapApplication(App, {
   providers: [
     provideRouter([
       { path: '', component: HomeComponent },
-      { path: 'login', component: LoginComponent },
-      { path: 'edit', component: EditDataComponent },
       { path: 'users', component: UsersComponent },
+      { path: 'edit', component: EditDataComponent },
       { path: 'view', component: ViewDataComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'inbox', component: InboxComponent },
+      { path: 'nurses', component: NursesComponent },
     ]),
     provideHttpClient(),
   ],
