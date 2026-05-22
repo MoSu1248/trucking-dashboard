@@ -1,1 +1,23 @@
-<p>home works!</p>
+<section aria-label="Dashboard Overview" class="dashboard h-full">
+  <div class="dashboard-grid p-4 h-full">
+    <div class="left-col">
+      <app-statistics></app-statistics>
+      <div class="glass-card dashboard-barchart">
+        <h2 class="text-text-primary text-1xl font-semibold">Monthly Clients</h2>
+      </div>
+      <div class="glass-card dashboard-recentPatients">
+        <h2 class="text-text-primary text-1xl font-semibold">Recent Clients</h2>
+      </div>
+    </div>
+    <div class="right-col">
+      <div class="glass-card dashboard-employees card-dark">
+        <h2 class="text-text-primary text-1xl font-semibold">Employees</h2>
+      </div>
+      <div class="dashboard-piechart">
+        <h2 class="text-text-primary text-1xl font-semibold">Positive Cases</h2>
+
+        <app-piechart></app-piechart>
+      </div>
+    </div>
+  </div>
+</section>

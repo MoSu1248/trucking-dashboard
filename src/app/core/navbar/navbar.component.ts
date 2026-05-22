@@ -32,7 +32,7 @@ export class NavbarComponent {
 
   links: Links[] = [
     { name: 'dashboard', url: '/', icon: LayoutDashboard },
-    { name: 'users', url: '/users', icon: Users },
+    { name: 'clients', url: '/clients', icon: Users },
     { name: 'nurses', url: '/nurses', icon: Stethoscope },
     { name: 'inbox', url: '/inbox', icon: Inbox },
   ];

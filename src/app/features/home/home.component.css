@@ -1,0 +1,53 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  gap: 2rem;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-col div {
+  flex: 1; /* 50/50 */
+}
+
+.dashboard-stats {
+  flex: 0.3 0 auto;
+}
+.dashboard-barchart {
+  flex: 2;
+}
+.dashboard-recentPatients {
+  flex: 1;
+}
+
+.card-dark {
+  background:
+    radial-gradient(ellipse at top left, rgba(125, 60, 190, 0.14) 0%, transparent 70%), #1b1b1b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-piechart {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+app-piechart {
+  flex: 1;
+  min-height: 0;
+  display: block;
+}
