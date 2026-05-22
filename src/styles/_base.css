@@ -1,7 +1,7 @@
 @layer base {
   html,
   body {
-    @apply font-main transition-all ease-out overflow-hidden;
+    @apply font-main transition-all ease-out overflow-hidden h-full;
 
     background:
       radial-gradient(ellipse at center left, rgba(125, 60, 190, 0.14) 0%, transparent 60%),
