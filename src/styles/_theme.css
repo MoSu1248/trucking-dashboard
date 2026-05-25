@@ -22,8 +22,8 @@
 
   --color-bg-primary: #0f0f0f;
   --color-bg-sidebar: #161616;
-  --surface: rgba(255, 255, 255, 0.06);
-  --surface-border: rgba(255, 255, 255, 0.1);
+  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-surface-border: rgba(255, 255, 255, 0.1);
   --color-text-primary: #f5f5f5;
   --color-text-secondary: #a0a0a0;
   --shadow-card: var(--shadow-card-dark);
