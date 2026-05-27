@@ -23,15 +23,16 @@
 }
 
 .dashboard-stats {
-  flex: 0.3 0 auto;
-}
-.dashboard-barchart {
-  flex: 2;
-}
-.dashboard-recentPatients {
-  flex: 1;
+  flex: 0 0 auto; /* shrinks to content, doesn't grow */
 }
 
+.dashboard-barchart {
+  flex: 2; /* takes more space */
+}
+
+.dashboard-recentPatients {
+  flex: 1; /* takes less space */
+}
 
 .dashboard-piechart {
   padding: 1rem;
