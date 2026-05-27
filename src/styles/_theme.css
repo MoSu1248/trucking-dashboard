@@ -17,8 +17,8 @@
   --accent-hover: #d4603a;
 
   --glass-blur: blur(12px);
-  --shadow-card-light: 0 4px 24px rgba(0, 0, 0, 0.08);
-  --shadow-card-dark: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-card-light: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --shadow-card-dark: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 
   --color-bg-primary: #0f0f0f;
   --color-bg-sidebar: #161616;
