@@ -5,7 +5,7 @@ import { FilterComponent } from '../../shared/components/filter/filter.component
 
 @Component({
   selector: 'app-clients',
-  imports: [ClientsTableComponent, SearchComponent, FilterComponent],
+  imports: [ClientsTableComponent, FilterComponent, SearchComponent],
   templateUrl: './clients.component.html',
   styleUrl: './clients.component.css',
 })

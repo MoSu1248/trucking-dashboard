@@ -29,19 +29,20 @@
   cursor: pointer;
 }
 
-.table-container::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 4px;
 }
 
-.table-container::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.table-container::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 999px;
+  cursor: pointer;
 }
 
-.table-container::-webkit-scrollbar-thumb:hover {
+:-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
