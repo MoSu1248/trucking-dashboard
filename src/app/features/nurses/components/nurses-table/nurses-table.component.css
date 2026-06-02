@@ -1,0 +1,14 @@
+th,
+td {
+  padding: 1rem 0.2rem;
+}
+
+tr:hover {
+  background-color: var(--color-surface);
+}
+
+.table-container {
+  overflow-y: auto;
+  max-height: 700px; 
+  padding-right: 1rem;
+}
