@@ -9,6 +9,6 @@ tr:hover {
 
 .table-container {
   overflow-y: auto;
-  max-height: 700px;
+  max-height: 700px; 
   padding-right: 1rem;
 }
