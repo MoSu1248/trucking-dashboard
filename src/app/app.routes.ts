@@ -7,6 +7,7 @@ import { InboxComponent } from './features/inbox/inbox.component';
 import { LoginComponent } from './features/login/login.component';
 import { EditDataComponent } from './features/edit-data/edit-data.component';
 import { ViewDataComponent } from './features/view-data/view-data.component';
+import { RegisterComponent } from './features/register/register.component';
 
 export const routes: Routes = [
   { path: '', title: 'Dashboard', component: HomeComponent },
@@ -16,4 +17,5 @@ export const routes: Routes = [
   { path: 'login', title: 'Login', component: LoginComponent },
   { path: 'edit', title: 'Edit', component: EditDataComponent },
   { path: 'view', title: 'View', component: ViewDataComponent },
+  { path: 'register', title: 'Register', component: RegisterComponent },
 ];
