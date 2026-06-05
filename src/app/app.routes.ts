@@ -17,5 +17,5 @@ export const routes: Routes = [
   { path: 'login', title: 'Login', component: LoginComponent },
   { path: 'edit', title: 'Edit', component: EditDataComponent },
   { path: 'view', title: 'View', component: ViewDataComponent },
-  { path: 'register', title: 'Register', component: RegisterComponent },
+  { path: 'nurses/register', title: 'Register', component: RegisterComponent },
 ];

@@ -10,6 +10,11 @@
   cursor: pointer;
 }
 
+.sidebar a {
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
 .nav-divider {
   width: 60%;
   height: 1px;
