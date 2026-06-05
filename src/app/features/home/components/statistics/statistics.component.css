@@ -16,7 +16,7 @@
   justify-content: center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: linear-gradient(135deg, rgba(214, 104, 15, 0.3), rgba(190, 39, 204, 0.2));
+  background: linear-gradient(135deg, #a1521662, rgba(125, 60, 190, 0.14));
 }
 
 .stat-label {
@@ -27,4 +27,3 @@
 .stat-value {
   font-weight: bold;
 }
-
