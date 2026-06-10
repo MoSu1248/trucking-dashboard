@@ -4,6 +4,8 @@ import { AppointmentsComponent } from './components/appointments/appointments.co
 import { ReferralsComponent } from './components/referrals/referrals.component';
 import { PersonalDetailsComponent } from './components/personal-details/personal-details.component';
 import { LucideAngularModule, Phone, MapPin, User, IdCard } from 'lucide-angular';
+import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+
 @Component({
   selector: 'app-client-profile',
   imports: [
@@ -11,14 +13,10 @@ import { LucideAngularModule, Phone, MapPin, User, IdCard } from 'lucide-angular
     AppointmentsComponent,
     ReferralsComponent,
     PersonalDetailsComponent,
-    LucideAngularModule,
+
+    ProfileCardComponent,
   ],
   templateUrl: './client-profile.component.html',
   styleUrl: './client-profile.component.css',
 })
-export class ClientProfileComponent {
-  readonly Phone = Phone;
-  readonly MapPin = MapPin;
-  readonly User = User;
-  readonly IdCard = IdCard;
-}
+export class ClientProfileComponent {}

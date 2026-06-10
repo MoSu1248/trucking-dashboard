@@ -2,8 +2,9 @@
   position: relative;
 }
 
+th,
 td {
-  padding: 0.2rem 0.2rem;
+  padding: 0.5rem 0.2rem;
 }
 
 tr:hover {
@@ -12,7 +13,7 @@ tr:hover {
 
 .table-container {
   overflow-y: auto;
-  max-height: 300px; /* or whatever fits your card */
+  max-height: 200px;
   padding-right: 1rem;
 }
 
