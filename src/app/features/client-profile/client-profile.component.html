@@ -1,0 +1,31 @@
+<section class="page-shell client-profile">
+  <div class="glass-card page-shell-inner client-profile__inner">
+    <div class="client-left-col client-profile__left h-full">
+      <div class="glass-card card-dark h-full">
+        <div class="client-profile__img-wrapper w-full">
+          <img src="images/client-icon.png" alt="client icon" class="w-full rounded-2xl" />
+        </div>
+        <div class="mt-6 flex flex-col gap-4 text-text-primary justify-between">
+          <h3 class="text-xl">Mohammed Suhail</h3>
+          <div class="border-b text-text-secondary"></div>
+          <p class="client-profile__info">
+            <lucide-icon [img]="IdCard" [size]="20" />9902285103089
+          </p>
+          <p class="client-profile__info"><lucide-icon [img]="Phone" [size]="20" /> 0769881911</p>
+          <p class="client-profile__info"><lucide-icon [img]="MapPin" [size]="20" /> Gauteng</p>
+          <p class="client-profile__info"><lucide-icon [img]="User" [size]="20" /> Male</p>
+          <div class="border-b text-text-secondary"></div>
+
+          <p class="text-text-secondary client-profile__name">Last Coodinator</p>
+          <p>Jane Smith</p>
+        </div>
+      </div>
+    </div>
+    <div class="client-profile__right">
+      <app-personal-details class="col-span-2"></app-personal-details>
+      <app-appointments></app-appointments>
+      <app-medication></app-medication>
+      <app-referrals class="col-span-2"></app-referrals>
+    </div>
+  </div>
+</section>
