@@ -1,0 +1,111 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.login-header h1 {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.login-header p {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.forgot-password {
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-align: right;
+  text-decoration: none;
+  margin-top: -0.75rem;
+}
+
+.btn-login {
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(12px);
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  margin-left: auto;
+  padding: 0.5rem 10rem;
+  border-radius: var(--radius-btn);
+  background: linear-gradient(135deg, #a1521662, rgba(125, 60, 190, 0.14));
+  letter-spacing: 0.2em;
+  font-size: 0.875rem;
+  transition: 0.3s ease-out;
+  color: var(--color-text-primary);
+}
+
+.btn-login:hover,
+.btn-login:focus-visible {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.form-heading {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+.form-heading::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: var(--color-text-secondary);
+  position: absolute;
+  bottom: 5px;
+  transform: translate(4px);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--color-text-secondary);
+}
+
+.form-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-text-primary);
+  padding: 0.5rem 0;
+  width: 100%;
+  outline: none;
+  font-family: var(--font-main);
+}
+.form-input:focus {
+  border-bottom: 1px solid var(--accent);
+}
