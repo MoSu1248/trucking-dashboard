@@ -1,4 +1,3 @@
-// app.routes.ts
 import { Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 import { ClientsComponent } from './features/clients/clients.component';
@@ -12,6 +11,7 @@ import { ClientProfileComponent } from './features/client-profile/client-profile
 import { CoorindatorProfileComponent } from './features/coorindator-profile/coorindator-profile.component';
 import { DashboardLayoutComponent } from './core/layout/dashboard-layout/dashboard-layout.component';
 import { AuthLayoutComponent } from './core/layout/auth-layout/auth-layout.component';
+
 export const routes: Routes = [
   {
     path: '',
