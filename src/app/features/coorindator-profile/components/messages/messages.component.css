@@ -1,0 +1,26 @@
+
+
+.glass-message {
+  transition: 0.3s ease;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.glass-message:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.messages-list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, rgba(18, 18, 19, 0.363));
+  pointer-events: none;
+  border-radius: 0 0 16px 16px;
+}

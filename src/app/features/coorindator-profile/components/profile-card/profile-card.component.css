@@ -1,0 +1,49 @@
+.coordinator-profile__info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 200;
+}
+.status {
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  bottom: 10px;
+  right: 10px;
+  color: var(--color-text-primary);
+}
+
+.status-online {
+  background: rgba(34, 197, 94, 0.918);
+}
+.status-offline {
+  background: rgba(39, 39, 39, 0.747);
+}
+.status-away {
+  background: rgba(234, 178, 8, 0.884);
+}
+
+.status::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  background: currentColor;
+}
+
+.client-last__seen {
+  position: relative;
+}
+
+.client-last__seen::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: var(--color-text-secondary);
+  position: absolute;
+  bottom: 5px;
+  transform: translate(4px);
+}

@@ -16,6 +16,8 @@
   --accent: #e8724a;
   --accent-hover: #d4603a;
 
+  --accent-secondary: rgba(125, 60, 190, 0.712);
+
   --glass-blur: blur(12px);
   --shadow-card-light: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   --shadow-card-dark: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);

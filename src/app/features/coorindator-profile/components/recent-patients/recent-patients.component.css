@@ -1,0 +1,12 @@
+th,
+td {
+  padding: 0.7rem 0.2rem;
+}
+
+tr:hover {
+  background-color: var(--color-surface);
+}
+
+.coordinator__profile-table-containers {
+  max-height: 480px;
+}
