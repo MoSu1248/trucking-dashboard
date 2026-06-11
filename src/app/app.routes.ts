@@ -9,6 +9,8 @@ import { EditDataComponent } from './features/edit-data/edit-data.component';
 import { ViewDataComponent } from './features/view-data/view-data.component';
 import { RegisterComponent } from './features/register/register.component';
 import { ClientProfileComponent } from './features/client-profile/client-profile.component';
+import { CoorindatorProfileComponent } from './features/coorindator-profile/coorindator-profile.component';
+
 
 export const routes: Routes = [
   { path: '', title: 'Dashboard', component: HomeComponent },
@@ -20,4 +22,5 @@ export const routes: Routes = [
   { path: 'view', title: 'View', component: ViewDataComponent },
   { path: 'nurses/register', title: 'Register', component: RegisterComponent },
   { path: 'client/profile', title: 'Profile', component: ClientProfileComponent },
+  { path: 'coordinator/profile', title: 'Coordinator Profile', component: CoorindatorProfileComponent },
 ];

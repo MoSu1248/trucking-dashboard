@@ -1,10 +1,4 @@
-.glass-cards {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-.glass {
+.stats {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.199);
@@ -12,7 +6,15 @@
   padding: 1rem 1.5rem;
 }
 
-.icon {
+.stats__row {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.stats__icon {
   border-radius: var(--radius-btn);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--color-text-primary);
@@ -20,12 +22,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.negative-icon {
-}
-
-.positive-icon {
-  background: rgba(34, 197, 94, 0.1);
-  color: rgba(34, 197, 94, 0.9);
 }

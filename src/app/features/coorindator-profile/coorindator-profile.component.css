@@ -1,0 +1,12 @@
+.coordinator-profile__inner {
+  display: grid;
+  grid-template-columns: 25fr 75fr;
+  gap: 2rem;
+}
+
+.coordinator-profile__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+

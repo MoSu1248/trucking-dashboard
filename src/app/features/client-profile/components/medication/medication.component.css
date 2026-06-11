@@ -11,4 +11,5 @@ tr:hover {
   overflow-y: auto;
   max-height: 200px;
   padding-right: 1rem;
+  min-height: 200px;
 }
