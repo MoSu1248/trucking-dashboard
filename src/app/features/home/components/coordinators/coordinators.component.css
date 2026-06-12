@@ -1,8 +1,8 @@
-.dashboard-employees {
+.coordinators {
   position: relative;
 }
 
-.dashboard-employees::after {
+.coordinators::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -58,5 +58,3 @@ tr:hover {
   margin-right: 0.4rem;
   background: currentColor;
 }
-
-

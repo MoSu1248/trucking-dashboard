@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { Ellipsis, LucideAngularModule } from 'lucide-angular';
-
 @Component({
-  selector: 'app-employee-table',
+  selector: 'app-coordinators-table',
   imports: [LucideAngularModule],
-  templateUrl: './employee-table.component.html',
-  styleUrl: './employee-table.component.css',
+  templateUrl: './coordinators-table.component.html',
+  styleUrl: './coordinators-table.component.css',
 })
-export class EmployeeTableComponent {
+export class CoordinatorsTableComponent {
   readonly Ellipsis = Ellipsis;
 }
