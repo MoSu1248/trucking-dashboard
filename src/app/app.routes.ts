@@ -11,6 +11,7 @@ import { ClientProfileComponent } from './features/client-profile/client-profile
 import { CoorindatorProfileComponent } from './features/coorindator-profile/coorindator-profile.component';
 import { DashboardLayoutComponent } from './core/layout/dashboard-layout/dashboard-layout.component';
 import { AuthLayoutComponent } from './core/layout/auth-layout/auth-layout.component';
+import { NotfoundComponent } from './features/notfound/notfound.component';
 
 export const routes: Routes = [
   {
@@ -37,4 +38,5 @@ export const routes: Routes = [
     component: AuthLayoutComponent,
     children: [{ path: 'login', title: 'Login', component: LoginComponent }],
   },
+  { path: '**', title: '404', component: NotfoundComponent },
 ];
