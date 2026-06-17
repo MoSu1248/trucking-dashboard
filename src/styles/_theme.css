@@ -38,7 +38,7 @@
   --sidebar-collapsed: 72px;
 }
 
-[data-theme='dark'] {
+[data-theme='light'] {
   --color-bg-primary: #f5efe8;
   --color-bg-sidebar: #ffffff;
   --surface: rgba(255, 255, 255, 0.7);

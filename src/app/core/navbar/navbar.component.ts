@@ -8,13 +8,22 @@ import {
   LogOut,
   Inbox,
   Stethoscope,
+  Sun,
+  Moon,
 } from 'lucide-angular';
 import { Links } from '../../shared/models/links.model';
 import { TwLogoComponent } from '../../shared/icons/logo/tw-logo/tw-logo.component';
+import { ThemeSwticherComponent } from '../../shared/components/theme-swticher/theme-swticher.component';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink, RouterLinkActive, LucideAngularModule, TwLogoComponent],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    LucideAngularModule,
+    ThemeSwticherComponent,
+    TwLogoComponent,
+  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
@@ -27,7 +36,7 @@ export class NavbarComponent {
     Stethoscope: Stethoscope,
   };
   readonly LogOut = LogOut;
-  readonly Settings = Settings;
+  readonly Sun = Sun;
   readonly iconMap = this.ICON_MAP;
 
   links: Links[] = [

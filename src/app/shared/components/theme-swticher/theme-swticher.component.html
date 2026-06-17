@@ -1,0 +1,17 @@
+@if (theme === 'dark') {
+  <button
+    (click)="toggleTheme()"
+    aria-label="light mode"
+    class="w-10 h-10 flex items-center justify-center rounded-btn"
+  >
+    <lucide-icon [img]="Sun" [size]="20" [strokeWidth]="1.5" />
+  </button>
+} @else {
+  <button
+    (click)="toggleTheme()"
+    aria-label="light mode"
+    class="w-10 h-10 flex items-center justify-center rounded-btn"
+  >
+    <lucide-icon [img]="Moon" [size]="20" [strokeWidth]="1.5" />
+  </button>
+}
