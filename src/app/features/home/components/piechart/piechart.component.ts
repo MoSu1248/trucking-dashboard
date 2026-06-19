@@ -12,6 +12,14 @@ import * as echarts from 'echarts';
   styleUrl: './piechart.component.css',
 })
 export class PiechartComponent {
+  textColor = getComputedStyle(document.documentElement)
+    .getPropertyValue('--color-text-secondary')
+    .trim();
+
+  lineColor = getComputedStyle(document.documentElement)
+    .getPropertyValue('--color-graph-line')
+    .trim();
+
   options: EChartsOption = {
     backgroundColor: 'transparent',
     tooltip: {
@@ -29,7 +37,7 @@ export class PiechartComponent {
       show: true,
       bottom: 0,
       textStyle: {
-        color: 'rgba(255, 255, 255, 0.6)',
+        color: this.textColor,
         fontSize: 12,
       },
       icon: 'circle',
@@ -52,11 +60,7 @@ export class PiechartComponent {
           borderWidth: 2,
           borderColor: 'rgba(255, 255, 255, 0.05)',
           color: (params: any) => {
-            const colors = [
-              'rgba(224, 115, 64, 0.7)',
-              'rgba(124, 58, 237, 0.6)',
-              'rgba(255, 255, 255, 0.08)',
-            ];
+            const colors = ['rgba(224, 115, 64, 0.7)', 'rgba(124, 58, 237, 0.6)', this.textColor];
             return colors[params.dataIndex];
           },
         },

@@ -35,17 +35,16 @@
 }
 
 .dashboard-piechart {
-  padding: 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--color-bg-sunk);
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.199);
   border-radius: 0.75rem;
-  padding: 0.75rem 1.5rem;
+  padding: 1.5rem 2rem;
 }
 
 app-piechart {

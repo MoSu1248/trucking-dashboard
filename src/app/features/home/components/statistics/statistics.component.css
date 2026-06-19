@@ -16,7 +16,9 @@
   justify-content: center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: linear-gradient(135deg, #a1521662, rgba(125, 60, 190, 0.14));
+  background: var(--color-card-dark);
+  background-size: calc(100% + 2px) calc(100% + 2px);
+  background-position: center;
 }
 
 .stat-label {

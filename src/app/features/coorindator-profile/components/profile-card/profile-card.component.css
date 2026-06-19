@@ -15,13 +15,16 @@
 }
 
 .status-online {
-  background: rgba(34, 197, 94, 0.918);
+  color: var(--color-text-online);
+  background: var(--color-bg-online);
 }
 .status-offline {
-  background: rgba(39, 39, 39, 0.747);
+  color: var(--color-text-offline);
+  background: var(--color-bg-offline);
 }
 .status-away {
-  background: rgba(234, 178, 8, 0.884);
+  color: var(--color-text-away);
+  background: var(--color-bg-away);
 }
 
 .status::before {
