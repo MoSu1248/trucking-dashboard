@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import {
   LucideAngularModule,
@@ -14,7 +14,7 @@ import {
 import { Links } from '../../shared/models/links.model';
 import { TwLogoComponent } from '../../shared/icons/logo/tw-logo/tw-logo.component';
 import { ThemeSwticherComponent } from '../../shared/components/theme-swticher/theme-swticher.component';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   imports: [
@@ -28,6 +28,7 @@ import { ThemeSwticherComponent } from '../../shared/components/theme-swticher/t
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
+  private router = inject(Router);
   ICON_MAP = {
     LayoutDashboard: LayoutDashboard,
     Settings: Settings,
@@ -40,9 +41,16 @@ export class NavbarComponent {
   readonly iconMap = this.ICON_MAP;
 
   links: Links[] = [
-    { name: 'dashboard', url: '/', icon: LayoutDashboard },
+    { name: 'dashboard', url: '/dashboard', icon: LayoutDashboard },
     { name: 'clients', url: '/clients', icon: Users },
     { name: 'coordinators', url: '/coordinators', icon: Stethoscope },
     { name: 'inbox', url: '/inbox', icon: Inbox },
   ];
+
+  logOut() {
+    localStorage.removeItem('userRole');
+    localStorage.removeItem('token');
+
+    this.router.navigate(['/auth/login']);
+  }
 }

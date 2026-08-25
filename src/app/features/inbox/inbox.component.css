@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   height: 200px;
-  background: linear-gradient(to bottom, transparent, rgba(18, 18, 19, 0.363));
+  background: var(--color-card-lower-gradient);
   pointer-events: none;
   border-radius: 0 0 16px 16px;
 }
