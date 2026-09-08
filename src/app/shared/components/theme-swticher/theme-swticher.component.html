@@ -1,17 +1,11 @@
-@if (theme === 'dark') {
-  <button
-    (click)="toggleTheme()"
-    aria-label="light mode"
-    class="w-10 h-10 flex items-center justify-center rounded-btn"
-  >
+<button
+  (click)="toggleTheme()"
+  aria-label="light mode"
+  class="settings-btn w-10 h-10 flex items-center justify-center rounded-btn"
+>
+  @if (theme === 'dark') {
     <lucide-icon [img]="Sun" [size]="20" [strokeWidth]="1.5" />
-  </button>
-} @else {
-  <button
-    (click)="toggleTheme()"
-    aria-label="light mode"
-    class="w-10 h-10 flex items-center justify-center rounded-btn"
-  >
+  } @else {
     <lucide-icon [img]="Moon" [size]="20" [strokeWidth]="1.5" />
-  </button>
-}
+  }
+</button>

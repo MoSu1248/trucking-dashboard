@@ -12,13 +12,27 @@ import { DashboardLayoutComponent } from './core/layout/dashboard-layout/dashboa
 import { AuthLayoutComponent } from './core/layout/auth-layout/auth-layout.component';
 import { NotfoundComponent } from './features/notfound/notfound.component';
 import { CoordinatorsComponent } from './features/coordinators/coordinators.component';
+import { authGuard } from './core/guards/auth-guard';
 
 export const routes: Routes = [
   {
+    path: 'auth',
+    component: AuthLayoutComponent,
+    children: [{ path: 'login', title: 'Login', component: LoginComponent }],
+  },
+
+  {
+    path: '',
+    redirectTo: 'auth/login',
+    pathMatch: 'full',
+  },
+
+  {
     path: '',
     component: DashboardLayoutComponent,
+    canActivate: [authGuard],
     children: [
-      { path: '', title: 'Dashboard', component: HomeComponent },
+      { path: 'dashboard', title: 'Dashboard', component: HomeComponent },
       { path: 'clients', title: 'Clients', component: ClientsComponent },
       { path: 'coordinators', title: 'Coordinators', component: CoordinatorsComponent },
       { path: 'inbox', title: 'Inbox', component: InboxComponent },
@@ -33,10 +47,6 @@ export const routes: Routes = [
       },
     ],
   },
-  {
-    path: '',
-    component: AuthLayoutComponent,
-    children: [{ path: 'login', title: 'Login', component: LoginComponent }],
-  },
+
   { path: '**', title: '404', component: NotfoundComponent },
 ];

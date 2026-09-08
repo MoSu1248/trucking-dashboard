@@ -11,6 +11,14 @@ import * as echarts from 'echarts';
   providers: [provideEchartsCore({ echarts })],
 })
 export class LinechartComponent {
+  textColor = getComputedStyle(document.documentElement)
+    .getPropertyValue('--color-text-secondary')
+    .trim();
+  
+   lineColor = getComputedStyle(document.documentElement)
+    .getPropertyValue('--color-graph-line')
+    .trim();
+
   options: EChartsOption = {
     backgroundColor: 'transparent',
     tooltip: {
@@ -32,15 +40,15 @@ export class LinechartComponent {
     xAxis: {
       type: 'category',
       data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-      axisLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } },
-      axisLabel: { color: 'rgba(255,255,255,0.4)' },
+      axisLine: { lineStyle: { color: this.lineColor } },
+      axisLabel: { color: this.textColor },
     },
     yAxis: {
       type: 'value',
       min: 80,
       axisLine: { show: false },
-      splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } },
-      axisLabel: { color: 'rgba(255,255,255,0.4)' },
+      splitLine: { lineStyle: { color: this.lineColor } },
+      axisLabel: { color: this.textColor },
     },
     series: [
       {

@@ -1,0 +1,30 @@
+<div
+  class="register absolute z-100 w-full h-full bg-black/40 backdrop-blur-sm flex justify-center items-center"
+>
+  <div
+    class="register-popup w-[600px] h-[300px] flex flex-col gap-5 justify-center items-center rounded-2xl bg-bg-sidebar/90 backdrop-blur-xl border border-white/10 shadow-2xl px-8 text-center"
+  >
+    <div class="w-12 h-12 rounded-full bg-green-500/15 flex items-center justify-center">
+      <svg
+        class="w-6 h-6 text-green-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+      </svg>
+    </div>
+
+    <p class="text-white font-medium text-lg">Registration successful</p>
+    <p class="text-white/50 text-sm">The user account has been created.</p>
+
+    <button
+      (click)="onCloseRequest.emit()"
+      type="button"
+      class="mt-2 px-5 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition cursor-pointer"
+    >
+      Done
+    </button>
+  </div>
+</div>

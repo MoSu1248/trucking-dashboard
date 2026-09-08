@@ -20,13 +20,13 @@
 }
 
 .referral-item--yes {
-  background: rgba(34, 197, 94, 0.1);
-  color: rgba(34, 197, 94, 0.9);
+  color: var(--color-text-online);
+  background: var(--color-bg-online);
 }
 
 .referral-item--no {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--color-text-secondary);
+  color: var(--color-text-offline);
+  background: var(--color-bg-offline);
 }
 
 .client-profile__referrals {

@@ -1,4 +1,4 @@
-<div class="login-page">
+<form (ngSubmit)="onSubmit()" class="login-page">
   <div class="glass-card login-card">
     <div class="login-header">
       <img src="images/logo/twell-logo-white.svg" alt="Logo" class="login-logo w-30" />
@@ -10,23 +10,37 @@
       <div class="form-field">
         <label for="email">EMAIL</label>
         <input
+          required
+          email
           type="email"
           id="email"
           name="email"
           class="form-input"
           placeholder="you@example.com"
+          [(ngModel)]="formData.email"
+          #email="ngModel"
         />
+
+        @if (email.invalid && email.touched) {
+          <p>not a valid email</p>
+        }
       </div>
 
       <div class="form-field">
         <label for="password">PASSWORD</label>
         <input
+          required
           type="password"
           id="password"
           name="password"
           class="form-input"
           placeholder="••••••••"
+          [(ngModel)]="formData.password"
+          #password="ngModel"
         />
+        @if (password.invalid && password.touched) {
+          <p>not a valid password</p>
+        }
       </div>
 
       <a href="#" class="forgot-password w-fit ml-auto">Forgot password?</a>
@@ -34,4 +48,4 @@
       <button type="submit" class="btn-login">Sign In</button>
     </div>
   </div>
-</div>
+</form>
